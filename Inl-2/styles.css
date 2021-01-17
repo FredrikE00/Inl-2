@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     padding: 0;
@@ -10,9 +11,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5rem;
     font-size: 16px;
-    background-image: url("images/Header.jpg");
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
-    background-position: 50%  50%;
+    
+
 }
 a{
     text-decoration: none;
@@ -26,12 +28,255 @@ a{
 
 
 
-.top-meny {
-    display: flex;
-    justify-content: space-evenly;
- 
-}
+/* Nav and top showcase styling */
 .navbar-nav {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top:  3rem;
+    
+}
+
+.navbar-main .nav-links{
+    margin: 2rem;    
+}
+.nav-links:hover{
+
+}
+.btn-yellow {
+    background: #FFBB00;
+    color: #ffffff;
+    border-radius: 15px !important;
+}
+.top-showcase{
+    
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.top-content{
+    align-items: center;
+    margin: 1rem;
+    
+}
+.top-content h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.btn-transparent{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.play-circle {
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #FFBB00;
+    border: 1px solid #FFBB00;
+    border-radius: 50%;
+    padding:0.15rem;
+    
+}
+.btn-video{
+    color: #ffffff;
+    margin-left: 1rem;
+    
+}
+
+
+/* Ec-Banner  and About us styling*/
+.ec-banner{
+    display: flex;
+    margin-top: 10rem ;
+    justify-content: space-evenly;
+}
+.about-us{
+margin-top: 3rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+/* flex-direction: column; */
+align-items: center;
+
+justify-content: space-evenly;
+font-family: 'Roboto', sans-serif;
+
+}
+.aboutus-content{
+    width: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.about-us .about-h1{
+    color: #333333;
+    line-height: 3.5rem;
+   }
+.about-us .about-p{
+    line-height: 2rem;
+    color: #8a8a8a;
+}
+.aboutus-img{
+    
+}
+.iphone{
+    background: url('images/bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.stores{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+.stores img{
+    margin: 1rem;
+}
+
+/* Features styling */
+.feat-main .container{
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 10px; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.features{
+    margin-top: 15rem;
+    display: flex;
+}
+.features h1 {
+    font-size: 3.5rem;
+}
+.features  h1 h2{
+    font-weight: black;
+    color: #333333;
+
+}
+.features p{
+    line-height: 2rem;
+    color: #8a8a8a;
+}
+.feat-top{
+display: flex;
+flex-direction: column;
+}
+.feat-main{
+    display: flex;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr ; */
+   
+}
+.feat-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.feat-content img{
+    float: left;
+    padding-right: 1rem; ;
+}
+.features .features-main-img{
+    width: 500px;
+    float: right;
+
+}
+
+/* Appscreen styling */
+.app-text{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height:  2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.app-text h1{
+    color: #333333;
+    font-weight: black;
+    font-size: 3rem;
+}
+.app-text p{
+    color: #8a8a8a;
+}
+.appscreen{
+    
+}
+.appphones{
+    
+}
+.opacaty-40{
+    opacity: 40%;
+    width: 230px;
+}
+.opacaty-70{
+    opacity: 70%;
+    width: 230px;
+}
+/* Application Statistics Styling */
+
+.blue-nmbr{
+    font-weight: bold;
+    color: #3096FE ;
+    font-size: 3rem;
+    text-align: center;
+}
+.app-stats-p{
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.app-stats{
+    margin-top: 5rem;
+    background: url('images/Layer\ 815.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.app-stats-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 2rem;
+
+}
+.stat-box{
+    margin: 3rem;
+}
+.app-statistics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Banner styling */
+.bg-1{
+    background-image: url('images/Bg-banner.svg');
+}
+.container .banner{
+   width: 100%;
+   /* background: url('images/Bg-banner.svg'); */
+}
+.banner{
+    /* background: url('images/Bg-banner.svg'); */
+    
+    color: #ffffff;
+    /* background-repeat: no-repeat; */
+    
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+        
 }
