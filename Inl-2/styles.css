@@ -211,12 +211,6 @@ flex-direction: column;
 .app-text p{
     color: #8a8a8a;
 }
-.appscreen{
-    
-}
-.appphones{
-    
-}
 .opacaty-40{
     opacity: 40%;
     width: 230px;
@@ -349,4 +343,124 @@ flex-direction: column;
 }
 .footer-icons i{
     margin-left: 2rem;
+}
+
+@media(min-width:576px) {
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-main{
+        padding: 2rem;
+    }
+    .top-showcase img {
+        display: none;
+    }
+    .aboutus-content{
+        background-color: #ffffff;
+    }
+    .about-us .iphone {
+        display: none;
+    }
+    .features-main-img{
+        display: none;
+    }
+    .appscreen  .opacaty-70 , .opacaty-40{
+        display: none;
+    }
+    .appscreen .opacaty-40, .opacaty-70{
+        display: none;
+    }
+    .app-statistics {
+        display: flex;
+        flex-direction: column;
+    }
+    .stat-box{
+        align-items: center;
+        text-align: center;
+    }
+    .banner .banner-phones{
+        display: none;
+    }
+    .container{
+        max-width: 550px;
+    }
+}
+@media(min-width:768px) {
+    
+    .container {
+        max-width: 720px;
+    }
+}
+@media(min-width:992px) {
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-main{
+        padding: 0;
+    }
+    .top-showcase img {
+        display: block;
+    }
+    .aboutus-content p h1{
+        color: #333333
+    }
+    .about-us .iphone {
+        display: block;
+    }
+    .features-main-img{
+        display: block;
+    }
+    .appscreens .container{
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+    .app-phones{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .appscreen  .opacaty-70 , .opacaty-40{
+        display:inline;
+        width: 230px;
+    }
+    .appscreen .opacaty-40, .opacaty-70{
+        display:inline;
+        width: 230px;
+    }
+    .app-statistics {
+        display: flex;
+        flex-direction: row;
+    }
+    .banner .banner-phones{
+        display: block;
+    }
+    .stat-box{
+        align-items: center;
+        text-align: center;
+    }
+    .container {
+        max-width: 968px;
+    }
+}
+@media(min-width: 1200px) {
+    .appscreens.container{
+        width: 100%;
+    }
+    .app-phones{
+        width: 100%;
+    }
+    .appscreen  .opacaty-70 , .opacaty-40{
+        display: inline-block;
+        width: 230px;
+    }
+    .appscreen .opacaty-40, .opacaty-70{
+        display:inline-block;
+        width: 230px;
+    }
+    .container {
+        max-width: 1200px;
+    }
 }
